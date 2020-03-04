@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Examensarbete</title>
+    <title> Examensarbete </title>
   </head>
   <body>
-
-    <div class="display">
-          <h1 class="name"></h1>
-          <p class="temp"></p>
-          <p class="desc"></p>
-          <p class="country"></p>
-    </div>
-
-    <div class="input">
-      <input type="text" class="inputValue">
+    <div class="container">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Enter city here...."/>
       <input type="submit" value="Submit" class="button">
-    </div>
-    
-    <script src="script.js"></script>
+    </header>
+    <main>
+      <section class="location">
+        <div class="city"></div>
+        <div class="date"></div>
+        <div class="temp"></div>
+      </section>
+      <div class="currentTemp">
+        <div class="temp"></div>
+        <div class="weatherType"></div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>

@@ -1,4 +1,57 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.location .city {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  font-size: 16px;
+}
+
+.currentTemp .temp {
+  font-size: 80px;
+  font-weight: 900;
+  margin: 30px 0px;
+}
+
+.currentTemp .weatherType {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
 }
