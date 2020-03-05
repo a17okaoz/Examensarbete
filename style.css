@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   font-style: italic;
+  padding-top: 20px;
 }
 
 header {
