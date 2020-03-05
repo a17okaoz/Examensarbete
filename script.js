@@ -32,14 +32,15 @@ function displayResults(weather) {
   temp.innerHTML = `<img src="http://openweathermap.org/img/wn/${weather.weather[0].icon}.png" height="100" width="100"/> ${Math.round(weather.main.temp-273.15)}<span>℃</span>`;
 
   var type = document.querySelector(".currentTemp .weatherType");
-  type.innerHTML = `${weather.weather[0].main}`;
+  type.innerHTML = `${weather.weather[0].description}`;
+
 }
 
 function dateBuilder(todayDate) {
-  var month = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti",
-  "september", "oktober", "november", "december"];
+  var month = ["January", "February", "March", "April", "May", "June", "July", "August",
+  "September", "October", "November", "December"];
 
-  var days = ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"];
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   var day = days[todayDate.getDay()];
   var date = todayDate.getDate();
