@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <title> Examensarbete </title>
   </head>
+
   <body>
     <div class="container">
       <div class="text"><h3>Weather application Artefakt</h3></div>
     <header>
-      <input type="text" autocomplete="off" class="search-box" placeholder="Enter city here...."/>
+      <input type="text" autocomplete="off" id="test" class="search-box" placeholder="Enter city here...."/>
     </header>
     <div class="subButton">
-      <input type="submit" value="Submit" class="button"/>
+      <input type="submit" value="Submit" id="button" class="button"/>
     </div>
+
     <main>
       <section class="location">
         <div class="city"></div>
@@ -27,5 +29,6 @@
     </main>
   </div>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   </body>
 </html>
